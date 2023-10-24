@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+}
+
+/* footer{
+    position: sticky;
+    bottom: 0px;
+} */
+nav{
+    background-color: black;
+    padding: 12px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+    color: white;
+}
+
+.logo{
+    margin: 0px 23px;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul >li >a:hover{
+    color: rgb(192, 189, 205);
+}
+
+main{
+    min-height: 86vh;
+}
+
+.logo span{
+    font-weight: 800;
+    font-size: 25px;
+}
+.logo img{
+    width: 25px;
+    filter: invert(1);
+}
+
+.container{
+    max-width: 80vw;
+    margin: auto;
+    /* padding: 9px 15px; */
+}
+
+.container h1{
+    padding: 12px 0;
+    font-size: 25px;
+}
+
+input[type = 'text']{
+    min-width: 244px;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 15px;   
+}
+
+.btn {
+    min-width: 23px;
+    padding: 8px 17px;
+    margin: 25px 0;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    font-weight: 900;
+    /* font-size: 24px; */
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px grey;
+}
+/* 
+#resultsCont{
+    font-weight: bolder;
+} */
+
+#resultsCont div::first-letter{
+    text-transform: uppercase;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* body{
+        background-color: burlywood;
+    } */
+
+    .container h1{
+        font-size: 20px;
+    }
+
+    #resultsCont{
+        font-size: 15px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0px;
+    }
+
+    .logo span{
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 20px;
+        filter: invert(1);
+    }
+
+    input{
+        min-width: 210px;
+        /* padding: 3px 12px;
+        border: 2px solid black;
+        border-radius: 4px; */ 
+        font-size: 10px;   
+    }
+}
+
+@media only screen and (width: 100px) and (width: 300){
+
+    .container h1{
+        font-size: 15px;
+    }
+
+    .container h2{
+        font-size: 15px;
+    }
+
+    #resultsCont{
+        font-size: 10px;
+    }
+
+    .container{
+        margin: 0px;
+    }
+
+    footer{
+        font-size: 9px;
+    }
+}
+
+@media only screen and (width: 300px) {
+    .container h1{
+        font-size: 15px;
+    }
+
+    .container h2{
+        font-size: 15px;
+    }
+
+    #resultsCont{
+        font-size: 10px;
+    }
+
+    .container{
+        margin: 0px;
+    }
+
+    footer{
+        font-size: 5px;
+    }
+} 
+
+@media only screen and (min-width: 415px), (min-height: 916px)  {
+    main{
+        min-height: 93vh;
+    }
+
+    .container h1{
+        font-size: 15px;
+    }
+
+    .container h2{
+        font-size: 15px;
+    }
+
+    #resultsCont{
+        font-size: 10px;
+    }
+
+    footer{
+        font-size: 5px;
+    }
+
+} 
+
+@media only screen and (max-width: 412px), (max-height: 915px)  {
+
+    main{
+        /* background-color: red; */
+    }
+
+    .container h1{
+        font-size: 25px;
+    }
+
+    .container h2{
+        font-size: 20px;
+    }
+
+    #resultsCont{
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+} 
+
+@media only screen and (width: 800px), (height: 1024px)  {
+    .container h1{
+        font-size: 20px;
+    }
+
+    .container h2{
+        font-size: 25px;
+    }
+
+    #resultsCont{
+        font-size: 20px;
+    }
+/* 
+    footer{
+        font-size: 5px;
+    } */
+} 
+
+.btn:hover {background-color: rgb(4, 73, 141);
+}
+
+.btn:active {
+    background-color: rgb(4, 73, 141);
+    color: rgb(23, 181, 23);
+    box-shadow: 0 3px grey;
+    transform: translateY(2px);
+}
+
