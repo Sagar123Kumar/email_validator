@@ -153,7 +153,7 @@ footer{
     }
 }
 
-@media only screen and (width: 100px) and (width: 300){
+@media only screen and (width: 100px) and (width: 300px){
 
     .container h1{
         font-size: 15px;
